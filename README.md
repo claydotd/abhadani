@@ -1,18 +1,24 @@
-# Simple steps to update the portfolio site
+# Updating your site's content
 
-This site is built with React and hosted on GitHub Pages. To edit/add to the portfolio, just edit the JSON files in the `content/` folder on the main branch. The site will update automatically.
+This site is built with React and hosted on GitHub Pages. To edit/add to the portfolio, just edit the JSON files in the `content/` folder. The site will update automatically when you commit the changes. (it may take a few minutes for the changes to go live)
 
-## Updating site information
+## Updating basic site information
 
 Edit **`content/site.json`** to change:
 
 - **name** 
 - **tagline** 
 - **bio** (this is different than the "About" page)
-- **about** (This is the "About" page: use `\n\n` between paragraphs)
 - **email** 
 - **twitter** 
 - **linkedin** 
+
+## Editing the About page
+
+Edit the about.tsx file. For this you'll need some basic html knowledge: paragraphs should be contained within `<p> </p>`
+You can make things in paragraphs bold by wrapping them in `<strong> </strong>` tags
+
+Don't touch anything else in that file or else the site will break!
 
 ## Adding or removing portfolio work
 
@@ -87,15 +93,16 @@ If something looks wrong after editing, check that your JSON is valid: every ent
 ## Project structure
 
 ```
-content/           ← Edit these JSON files to update the site
-  site.json        ← Name, bio, contact info
+content/           ← Edit these files to update the site
+  site.json        ← Name, short bio, contact info
+  about.tsx        ← About page content
   reportage.json
   features.json
   investigations.json
   opinion-analysis.json
   reviews.json
 src/
-  components/      ← Layout, navigation, work cards
-  pages/           ← Home, About, Selected Work, Contact
-  data/content.ts  ← Loads JSON into the app
+  components/      ← Stuff that makes the website work
+  pages/           ← For Clay to edit
+  data/content.ts  ← Loads JSON content into the app
 ```

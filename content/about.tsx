@@ -1,6 +1,8 @@
 export default function AboutText() {
   return (
 <div className="about-text">
+  {/* You can edit the content below here */}
+  
 <p>
 Anita Bhadani (she/her) is a writer and freelance journalist based in Glasgow, Scotland. She has written for publications including The National and Sunday National, The Herald, Big Issue, Hyphen, gal-dem, Migrant Women Press, The Skinny and Songlines.
 </p>
@@ -20,6 +22,8 @@ She holds an NCTJ Diploma in Journalism from Glasgow Clyde College (funded by th
 <p>
 Get in touch at <a href="mailto:anitabhadani@protonmail.com">anitabhadani@protonmail.com</a>.
 </p>
+
+{/* You can edit the content above here. Don't touch anything else please! */}
 </div>
   )
 }
