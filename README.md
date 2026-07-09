@@ -1,6 +1,6 @@
 # Simple steps to update the portfolio site
 
-This site is built with React and hosted on GitHub Pages. To edit/add to the portfolio, just edit the JSON files in the `content/` folder on the gh-pages branch. The site will update automatically.
+This site is built with React and hosted on GitHub Pages. To edit/add to the portfolio, just edit the JSON files in the `content/` folder on the main branch. The site will update automatically.
 
 ## Updating site information
 
