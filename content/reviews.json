@@ -1,0 +1,24 @@
+[
+  {
+    "title": "All Born Screaming – St. Vincent",
+    "date": "2024-04-26",
+    "publisher": "The Skinny",
+    "imageUrl": "https://abhadani.wordpress.com/wp-content/uploads/2024/05/st._vincent_-_all_born_screaming.png",
+    "url": "https://www.theskinny.co.uk/music/reviews/albums/st-vincent-all-born-screaming",
+    "featured": true
+  },
+  {
+    "title": "Sheherazaad – Qasr",
+    "date": "2024-02-26",
+    "publisher": "The Skinny",
+    "url": "https://www.theskinny.co.uk/music/reviews/albums/sheherazaad-qasr",
+    "featured": false
+  },
+  {
+    "title": "Les Amazones d’Afrique @ Saint Luke's, Glasgow, 2 Feb",
+    "date": "2024-02-06",
+    "publisher": "The Skinny",
+    "url": "https://www.theskinny.co.uk/music/live-music/reviews/les-amazones-d-afrique-saint-lukes-glasgow-2-feb",
+    "featured": false
+  }
+]
