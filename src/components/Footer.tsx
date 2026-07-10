@@ -10,7 +10,7 @@ export default function Footer() {
           &copy; {year} {site.name}. All rights reserved.
         </p>
         <p className="agd">
-          Site built by <a href="analoguegonedigital.co.uk">analoguegonedigital.co.uk</a>
+          Site built by <a href="https://analoguegonedigital.co.uk">analoguegonedigital.co.uk</a>
         </p>
         {site.email && (
           <a href={`mailto:${site.email}`} className="footer-link">
