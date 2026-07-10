@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
-import WorkCard from '../components/WorkCard'
+// import WorkCard from '../components/WorkCard'
 import { getFeaturedItems, site } from '../data/content'
+//import page background image
+
 
 export default function Home() {
   const featured = getFeaturedItems()
@@ -64,7 +66,7 @@ export default function Home() {
         </div>
         
         </div>
-        <div className="work-grid">
+        {/* <div className="work-grid">
             {featured.map((item) => (
               <WorkCard
                 key={`${item.category}-${item.title}`}
@@ -73,13 +75,13 @@ export default function Home() {
                 showCategory
               />
             ))}
-          </div>
+          </div> */}
       </section>
 
       {featured.length > 0 && (
         <section className="section right">
-            <Link to="/work" className="button">
-          See all selected work
+            <Link to="/contact" className="button">
+          Work with me
         </Link>
         </section>
       )}

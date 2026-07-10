@@ -4,6 +4,9 @@ import Home from './pages/Home'
 import About from './pages/About'
 import SelectedWork from './pages/SelectedWork'
 import Contact from './pages/Contact'
+import Copywriting from './pages/Copywriting'
+import Editorial from './pages/Editorial'
+import Photography from './pages/Photography'
 
 export default function App() {
   return (
@@ -15,6 +18,9 @@ export default function App() {
         <Route path="work/:categoryId" element={<SelectedWork />} />
         <Route path="contact" element={<Contact />} />
         <Route path="*" element={<Navigate to="/" replace />} />
+        <Route path="copywriting" element={<Copywriting />} />
+        <Route path="editorial" element={<Editorial />} />
+        <Route path="photography" element={<Photography />} />
       </Route>
     </Routes>
   )
