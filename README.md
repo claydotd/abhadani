@@ -29,6 +29,11 @@ Each category of writing has its own file in the `content/` folder in .json form
 | `investigations.json` | Investigations |
 | `opinion-analysis.json` | Opinion / Analysis |
 | `reviews.json` | Reviews |
+| `copywriting.json` | Copywriting examples |
+| `editorial.json` | Editorial examples
+
+## Blurbs for Copywriting and Editorial pages
+You can edit the blurbs for each of those pages in the `blurbs.tsx` file. It works similarly to the About page content.
 
 What is .json?
 "Java Script Object Notation" is just the code format that contains all the information the website needs to show things.
