@@ -1,14 +1,22 @@
-//"A page that says 'copywriting' and lets me set out a blurb and samples of my work in a simple grid way"
-import DukeofWellington from '../components/UnderConstruction'
-
+import WorkCard from '../components/WorkCard'
+import { getCopywritingItems } from '../data/content'
+import { CopywritingBlurb } from '../../content/blurbs.tsx'
 
 export default function Copywriting() {
-
-
+    const items = getCopywritingItems()
+    
     return(
         <div className="container page">
-            <DukeofWellington />
-            <h3>Under construction!</h3>
+            <h1>Copywriting</h1>
+            <CopywritingBlurb />
+            <div className="work-grid">
+                {items.map((item) => (
+                <WorkCard
+                    key={`${item.title}`}
+                    item={item}
+                />
+                ))}
+            </div>
         </div>
     )
 }

@@ -1,12 +1,21 @@
-// "A page that says 'editorial' and lets me lay out a blurb and a few samples in a simple grid way"
-
-import DukeofWellington from '../components/UnderConstruction'
+import WorkCard from '../components/WorkCard'
+import { getEditorialItems } from '../data/content'
+import { EditorialBlurb } from '../../content/blurbs.tsx'
 
 export default function Editorial() {
+    const items = getEditorialItems()
     return(
         <div className="container page">
-            <DukeofWellington />
-            <h3>Under construction!</h3>
+            <h1>Editorial</h1>
+            <EditorialBlurb />
+            <div className="work-grid">
+                {items.map((item) => (
+                <WorkCard
+                    key={`${item.title}`}
+                    item={item}
+                />
+                ))}
+            </div>
         </div>
     )
 }
