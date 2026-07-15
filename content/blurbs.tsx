@@ -2,9 +2,9 @@ export function CopywritingBlurb() {
     return (
   <div className="about-text">
     {/* You can edit the content below here */}
-    hello
+    
   <p>
-  Copywriting portforlio examples go here.
+  Copywriting portforlio examples go here. Hello
   </p>
   
   {/* You can edit the content above here. Don't touch anything else please! */}
