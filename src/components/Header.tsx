@@ -8,7 +8,7 @@ const navLinks = [
   { to: '/work', label: 'Selected Work' },
   { to: '/copywriting', label: 'Copywriting' },
   { to: '/editorial', label: 'Editorial' },
-  { to: '/photography', label: 'Photography' },
+  // { to: '/photography', label: 'Photography' },
   { to: '/contact', label: 'Contact' }
 ]
 
