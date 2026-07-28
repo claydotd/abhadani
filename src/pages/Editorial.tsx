@@ -1,21 +1,13 @@
-import WorkCard from '../components/WorkCard'
-import { getEditorialItems } from '../data/content'
-import { EditorialBlurb } from '../../content/blurbs.tsx'
+import ReactMarkdown from 'react-markdown'
+import editorialMarkdown from '../../content/editorial.md?raw'
 
 export default function Editorial() {
-    const items = getEditorialItems()
     return(
-        <div className="container page">
+        <div className="container page page-narrow">
             <h1>Editorial</h1>
-            <EditorialBlurb />
-            <div className="work-grid">
-                {items.map((item) => (
-                <WorkCard
-                    key={`${item.title}`}
-                    item={item}
-                />
-                ))}
+            <div className="about-text">
+                <ReactMarkdown>{editorialMarkdown}</ReactMarkdown>
             </div>
-        </div>
+    </div>
     )
 }

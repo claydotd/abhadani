@@ -3,12 +3,12 @@ import { NavLink } from 'react-router-dom'
 import { site } from '../data/content'
 
 const navLinks = [
-  { to: '/', label: 'Home', end: true },
-  { to: '/about', label: 'About' },
+  { to: '/', label: 'About', end: true},
   { to: '/work', label: 'Selected Work' },
-  { to: '/copywriting', label: 'Copywriting' },
+  { to: '/communications', label: 'Communications' },
   { to: '/editorial', label: 'Editorial' },
   // { to: '/photography', label: 'Photography' },
+  { to: '/etc', label: 'Etc' },
   { to: '/contact', label: 'Contact' }
 ]
 

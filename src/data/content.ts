@@ -4,8 +4,6 @@ import investigations from '../../content/investigations.json'
 import opinionAnalysis from '../../content/opinion-analysis.json'
 import reviews from '../../content/reviews.json'
 import siteConfig from '../../content/site.json'
-import copywriting from '../../content/copywriting.json'
-import editorial from '../../content/editorial.json'
 
 import type { Category, CategoryId, PortfolioItem, SiteConfig } from '../types'
 
@@ -50,12 +48,4 @@ export function getAllItems(): (PortfolioItem & {
       categoryId: category.id,
     })),
   )
-}
-
-export function getCopywritingItems(): PortfolioItem[] {
-  return copywriting as PortfolioItem[]
-}
-
-export function getEditorialItems(): PortfolioItem[] {
-  return editorial as PortfolioItem[]
 }
