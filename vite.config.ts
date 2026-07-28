@@ -1,12 +1,13 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { resolve } from 'path'
+import { galleryPhotosPlugin } from './vite/galleryPhotosPlugin.js'
 
 // Set base to your GitHub repo name for GitHub Pages deployment.
 // Use '/' if deploying to a custom domain or username.github.io root.
 export default defineConfig({
   base: '/',
-  plugins: [react()],
+  plugins: [react(), galleryPhotosPlugin(__dirname)],
   build: {
     rollupOptions: {
       input: {
