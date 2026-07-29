@@ -46,6 +46,8 @@ Below is an image.
 
 Each category of writing has its own file in the `content/` folder in .json format:
 
+| file      | category      |
+| ------------- | ------------- |
 | `reportage.json` | Reportage |
 | `features.json` | Features |
 | `investigations.json` | Investigations |
@@ -66,7 +68,8 @@ Each category of writing has its own file in the `content/` folder in .json form
 }
 ```
 
-
+| field      | note      |
+| ------------- | ------------- |
 | `title` | Required  |
 | `date` | Required. Publication date in YYYY-MM-DD format |
 | `publisher` | Required  |
@@ -112,6 +115,8 @@ If something looks wrong after editing, check that your JSON is valid: every ent
 
 ```
 content/           ← Edit these files to update the site
+  page-images/    ← images for home and contact pages. If you delete the image, there just won't be an image on the page.
+  photography/    ← pictures for the photography page. It automatically takes everything in there and puts it in the gallery.
   site.json        ← Name, short bio, contact info
   about.md        ← About page content
   communications.md
