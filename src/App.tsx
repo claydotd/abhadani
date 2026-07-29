@@ -1,5 +1,6 @@
 import { Routes, Route, Navigate } from 'react-router-dom'
 import Layout from './components/Layout'
+import ScrollToTop from './components/ScrollToTop'
 import SelectedWork from './pages/SelectedWork'
 import About from './pages/About'
 import AllWork from './pages/AllWork'
@@ -11,7 +12,9 @@ import Etc from './pages/Etc'
 
 export default function App() {
   return (
-    <Routes>
+    <>
+      <ScrollToTop />
+      <Routes>
       <Route path="/" element={<Layout />}>
         <Route index element={<About />} />
         <Route path="about" element={<About />} />
@@ -25,6 +28,7 @@ export default function App() {
         <Route path="etc" element={<Etc />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Route>
-    </Routes>
+      </Routes>
+    </>
   )
 }

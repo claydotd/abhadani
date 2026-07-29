@@ -1,18 +1,5 @@
 import { site } from '../data/content'
-
-// Vite resolves this at build time into an object like:
-// { '../../content/page-images/contact.jpeg': () => import(...) }
-const pageImages = import.meta.glob(
-  '../../content/page-images/*.{jpeg,jpg,png,webp,gif}',
-  { eager: true, import: 'default' }
-) as Record<string, string>
-
-function findPageImage(pageName: string) {
-  const match = Object.keys(pageImages).find((filePath) =>
-    filePath.match(new RegExp(`/${pageName}\\.(jpeg|jpg|png|webp|gif)$`))
-  )
-  return match ? pageImages[match] : null
-}
+import { findPageImage } from '../utils/pageImages'
 
 export default function Contact() {
   const contactImage = findPageImage('contact')

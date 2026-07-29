@@ -1,6 +1,10 @@
 import { useState, useEffect } from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 import { site } from '../data/content'
+
+function isAboutRoute(pathname: string) {
+  return pathname === '/' || pathname === '/about'
+}
 
 const navLinks = [
   { to: '/', label: 'About', end: true},
@@ -13,6 +17,8 @@ const navLinks = [
 ]
 
 export default function Header() {
+  const { pathname } = useLocation()
+  const hideSiteTitle = isAboutRoute(pathname)
   const [isOpen, setIsOpen] = useState(false)
 
   // Close menu on resize back to desktop width
@@ -26,11 +32,17 @@ export default function Header() {
 
   return (
     <header className="header">
-      <div className="container header-inner">
-        <NavLink to="/" className="site-title" onClick={() => setIsOpen(false)}>
-          <span className="site-name">{site.name}</span>
-          <span className="site-tagline">{site.tagline}</span>
-        </NavLink>
+      <div
+        className={
+          hideSiteTitle ? 'container header-inner header-inner--no-brand' : 'container header-inner'
+        }
+      >
+        {!hideSiteTitle && (
+          <NavLink to="/" className="site-title" onClick={() => setIsOpen(false)}>
+            <span className="site-name">{site.name}</span>
+            <span className="site-tagline">{site.tagline}</span>
+          </NavLink>
+        )}
 
         <button
           className="nav-toggle"
