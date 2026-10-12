@@ -4,4 +4,4 @@ I love working with progressive organisations of all sizes to develop and refine
 
 I've worked with a variety of organisations including Global Justice Now, the Institute for Public Policy Research (IPPR), Hwupenyu Health and Wellbeing, the Scottish Contemporary Art Network and the Women of the World (WOW) Festival.
 
-Get in touch to see how we can work together.
+Get in touch if you're interested in collaborating together.
