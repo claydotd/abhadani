@@ -1,6 +1,4 @@
-Anita Bhadani (she/her) is a writer and freelance journalist based in Glasgow, Scotland. She has written for publications including The National and Sunday National, The Herald, Big Issue, Hyphen, gal-dem, Migrant Women Press, The Skinny and Songlines.
-
-She came runner up in the Scottish Refugee Media Awards in 2022, and was longlisted for an Amnesty Media Award in the same year.
+Anita Bhadani (she/her) is a writer and freelance journalist based in Glasgow. She came runner up in the Scottish Refugee Media Awards, and was longlisted for an Amnesty Media Award.
 
 She is currently Media Manager at the UK-based NGO, Global Justice Now.
 
