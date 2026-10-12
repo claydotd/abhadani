@@ -1,4 +1,7 @@
-I have extensive experience working in communications, media and impact across the third sector - from NGOs, to a think tank, to grassroots charities.
+I have extensive experience working in communications, media and impact across the third sector.
 
-Currently, I work at the campaigning UK based NGO, Global Justice Now as their media manager. I've gained impactful media coverage for our campaigns in a variety of outlets including: NYT, Washington Post, The Guardian, BBC, Channel 4, The Times, Financial Times, POLITICO, LBC, Daily Mail, CNN, Big Issue, New Statesman, The Independent, The i, Novara Media, New Internationalist, Byline Times, Morning Star and many others.
+I love working with progressive organisations to develop and refine narratives and messaging that engage meaningfully with different audiences, build strong movements and spark change. I'm skilled in narrative strategy and development, managing press offices, social media management, content creation, editorial work and copywriting.
 
+I've worked with a variety of organisations including Global Justice Now, IPPR Scotland, Hwupenyu Health and Wellbeing, and the Scottish Contemporary Art Network.
+
+Get in touch to see how we can work together.
