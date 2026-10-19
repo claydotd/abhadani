@@ -9,7 +9,7 @@ import type { Category, CategoryId, PortfolioItem, SiteConfig } from '../types'
 
 export const site: SiteConfig = siteConfig
 
-export const categories: Category[] = [
+const allCategories: Category[] = [
   { id: 'reportage', label: 'Reportage', items: reportage as PortfolioItem[] },
   { id: 'features', label: 'Features', items: features as PortfolioItem[] },
   {
@@ -23,7 +23,11 @@ export const categories: Category[] = [
     items: opinionAnalysis as PortfolioItem[],
   },
   { id: 'reviews', label: 'Reviews', items: reviews as PortfolioItem[] },
-].filter((category) => category.items.length > 0)
+]
+
+export const categories: Category[] = allCategories.filter(
+  (category) => category.items.length > 0,
+)
 
 export function getCategory(id: CategoryId): Category | undefined {
   return categories.find((c) => c.id === id)
