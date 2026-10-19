@@ -23,7 +23,7 @@ export const categories: Category[] = [
     items: opinionAnalysis as PortfolioItem[],
   },
   { id: 'reviews', label: 'Reviews', items: reviews as PortfolioItem[] },
-]
+].filter((category) => category.items.length > 0)
 
 export function getCategory(id: CategoryId): Category | undefined {
   return categories.find((c) => c.id === id)
